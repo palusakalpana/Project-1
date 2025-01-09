@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shisha's Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <div class="nav">
+        <div ><i class="fa-solid fa-user-doctor fa-beat" style="color: rgb(41, 226, 189);"></i> <b>SHISHA'S HOSPITAL</b></div>
+        <div class="nav1">
+            <div><a href="#image-container">Home</a></div>
+            <div><a href="#container2">About</a></div>
+            <div><a href="#Departments">Departments</a></div>
+            <div><a href="#appointment">Contact</a></div>
+            <div><i class="fa-brands fa-facebook fa-beat"></i></div>
+            <div><i class="fa-brands fa-twitter fa-beat"></i></div>
+            <div class="search-container">
+                <!-- Search Icon -->
+                <i class="fa-solid fa-magnifying-glass fa-beat" style="cursor: pointer;" onclick="toggleSearchBar()"></i>
+                <!-- Search Bar -->
+                <input type="text" class="search-bar search-input" id="searchInput" placeholder="Search..." />
+            </div>
+        </div>
+    </div>
+
+    <!-- Image and Text Container -->
+    <div class="image-container" id="image-container" >
+        <div class="info-text">
+            <div data-aos="fade-right" data-aos-duration="2000">
+            <h1>Empowering Lives Through Expert Medical Care</h1>
+            <p>Your Health, Our Happiness</p>
+            <img src="images/iconstop.png">
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <!-- Emergency Service Card -->
+        <div class="card" style="background-color: #a7f3f9;">
+            <h1>1-800-600-380</h1>
+            <h3>EMERGENCY SERVICE</h3>
+            <p>Our emergency services are available 24/7, delivering quick and expert care for all urgent medical needs. With advanced technology and a dedicated team, we ensure you receive immediate attention and efficient treatment when it matters most.</p>
+            <br><br><a href="#">Call Now</a>
+        </div>
+
+        <!-- Appointment Card -->
+        <div class="card" style="background-color: #c0fbff;">
+        
+            <h3 style="text-align: center; line-height: 2;"><i class="fa-solid fa-calendar-days fa-2x" style="margin-right: 10px; color: #046e86;"></i><br>DO YOU WANT TO MAKE AN APPOINTMENT?</h3>
+            <p>Scheduling your appointment is easy! Our team is ready to assist you with booking a convenient time for your consultation. Click below to make an appointment now.</p>
+            <br><br><a href="#">Book Now</a>
+        </div>
+
+        <!-- Opening Hours Card -->
+        <div class="card" style="background-color: #a7f3f9;">
+            
+            <h3 style="text-align: center; line-height: 2;"> <i class="fa-solid fa-clock fa-2x" style="margin-right: 10px; color: #046e86;"></i><br>OPENING HOURS</h3>
+            <p>Monday to Friday: 9:00 AM - 5:00 PM<br>
+                Saturday & Sunday: 10:00 AM - 3:00 PM</p>
+                <br><br><a href="#">Contact Us</a>
+        </div>
+    </div>
+    <!-- About Shisha's Hospital -->
+    <div data-aos="zoom-out-up">
+    <div class="container2" id="container2" >
+        
+            <div class="image-section">
+                <img src="images/Aboutimage.png" alt="Medical Equipment">
+            </div>
+        
+        
+        <div class="text-section">
+            <h1>About Shisha's Hospital</h1>
+            <h3>Professional Care</h3>
+            <p>Shisha’s Hospital is committed to providing exceptional healthcare with a focus on patient care and comfort.</p>
+            <p>Our team of experienced doctors, nurses, and medical professionals is dedicated to delivering the highest standard of medical services across a wide range of specialties.</p>
+            <p>With state-of-the-art facilities and compassionate care, we strive to improve the health and well-being of our community.</p>
+<!-- Medical Analysis -->
+            <div class="feature-container">
+                <ul class="features">
+                    
+                    <li  class="active1" data-target="consulting">Medical Consulting</li>
+                    <div id="consulting" class="feature-details active">
+                        <h3>Medical Consulting</h3>
+                        <p>Our expert medical consultants offer personalized guidance and treatment plans tailored to your unique health needs. With years of experience in a variety of specialties, our doctors provide comprehensive consultations to help you make informed decisions about your health. Whether you’re seeking advice for a specific condition or a general health check-up, our team is here to provide trusted medical expertise.
+
+                        </p>
+                    </div>
+                    <li data-target="laboratory">Laboratory Analysis</li>
+                    <div id="laboratory" class="feature-details">
+                        <h3>Laboratory Analysis</h3>
+                        <p>Our state-of-the-art laboratory offers accurate and reliable diagnostic testing to support your healthcare needs. With advanced equipment and a skilled team, we provide a wide range of tests, including blood work, imaging, and other specialized analyses, ensuring timely and precise results for effective treatment plans.
+
+                        </p>
+                    </div>
+                    <li data-target="diagnostic">Diagnostic Clinic</li>
+                    <div id="diagnostic" class="feature-details">
+                        <h3>Diagnostic Clinic</h3>
+                        <p>Our Diagnostic Clinic is equipped with the latest technology to provide accurate and quick assessments for a wide range of health conditions. From routine screenings to advanced diagnostic tests, we offer comprehensive services to help diagnose and monitor your health, ensuring timely and effective treatment.</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Services we provide in Shisha's Hospital -->
+    <div class="image3" id="Departments">
+        <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/Rectangle-827-copy-2.jpg?id=72">
+        <div class="image3-head"><h1>How we can help you</h1>
+        <p>READ MORE ABOUT OUR SERVICES </p></div>
+    <div class="services-container">
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0004_%EF%81%AE.jpg" alt="Ophthalmology">
+            <h3>Ophthalmology</h3>
+            <p>Comprehensive eye care, including routine eye exams, treatments for eye diseases, and advanced surgeries for vision correction.</p>
+        </div>
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0005_%EF%88%9E.jpg" alt="Cardiology">
+            <h3>Cardiology</h3>
+            <p>Expert care for heart-related conditions, including diagnostic tests, management of cardiovascular diseases, and preventive treatments.</p>
+        </div>
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0003_%EF%83%B0.jpg" alt="Dentistry">
+            <h3>Dentistry</h3>
+            <p>Comprehensive dental care, including routine check-ups, preventive treatments, and advanced procedures for oral health.</p>
+        </div>
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0002_%EF%89%8E.jpg" alt="Laboratory">
+            <h3>Laboratory</h3>
+            <p>Accurate and timely diagnostic testing, including blood tests, imaging, and other specialized analyses to support your treatment.</p>
+        </div>
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0001_%EF%83%B1.jpg" alt="Pediatrics">
+            <h3>Pediatrics</h3>
+            <p>Compassionate care for children, from routine check-ups to treatment of common childhood illnesses and chronic conditions.</p>
+        </div>
+        <div class="service">
+            <img src="https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/icon3_0000_%EF%88%9D.jpg" alt="Naturopathy">
+            <h3>Naturopathy</h3>
+            <p>Holistic treatment options focusing on natural healing, including nutrition counseling, herbal treatments, and wellness therapies.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Doctors Profile -->
+<div data-aos="zoom-in-left" data-aos-duration="10000">
+<div class="container4" >
+    <div class="about-shiri">
+        <h1>Dr. Shirisha Palusa</h1>
+        <h3 style="color: #0cadb9;">Professional Naturopath</h3>
+        <p>Dr. Palusa Shirisha is a highly respected and experienced Naturopath, with extensive training and education in the field of Naturopathy. Her passion for natural healing and holistic care is reflected in her commitment to improving the health and well-being of her patients. As the founder and owner of this hospital, Dr. Shirisha brings a wealth of knowledge and expertise, ensuring that each patient receives the highest standard of care through personalized, natural treatment approaches.
+
+        </p>
+        <br>
+        <br>
+        <a href="#">View All Doctors</a>
+
+    </div>
+    <div class="shiri-photo">
+        <img src="images/Shiriimg.jpg">
+    </div>
+</div>
+</div>
+<!-- No of Doctors and No of Services We Provide -->
+<div class="counter-container">
+  <div class="counter-item">
+    <div class="sh-counter-number-container">
+      <div class="sh-counter-number sh-counter-animate size-custom" data-target="48">0</div>
+      <div class="underline"></div>
+    </div>
+    <p>Certified Doctors</p>
+  </div>
+  <div class="counter-item">
+    <div class="sh-counter-number-container">
+      <div class="sh-counter-number sh-counter-animate size-custom" data-target="56">0</div>
+      <div class="underline"></div>
+    </div>
+    <p>Medical Services</p>
+  </div>
+  <div class="counter-item">
+    <div class="sh-counter-number-container">
+      <div class="sh-counter-number sh-counter-animate size-custom" data-target="18">0</div>
+      <div class="underline"></div>
+    </div>
+    <p>Different Affiliates</p>
+  </div>
+  <div class="counter-item">
+    <div class="sh-counter-number-container">
+      <div class="sh-counter-number sh-counter-animate size-custom" data-target="102">0</div>
+      <div class="underline"></div>
+    </div>
+    <p>Offered Programs</p>
+  </div>
+</div>
+<!-- Special Offers and Combos we have -->
+<div class="container6">
+    <img src="images/Services.jpg">
+    <div class="offers-head"><h1>Our Special Offers</h1>
+    <p>START TO BE HEALTHY TODAY </p></div>
+    <div class="special-offers">
+        <div class="offer">
+            <h3>Allergy Check</h3>
+            <h1><i class="fa-solid fa-indian-rupee-sign"></i> 399</h1>
+            <p>5 treatments</p><br><br>
+            <p>Allergy Test</p>
+            <p>Consultation</p>
+            <p>Treatments</p>
+            <p>10 Procedures</p>
+            <p>Test Results</p>
+            <br>
+            <a href="#">Get now</a>
+        </div>
+
+        <div class="offer">
+            <h3>Eye Checkup</h3>
+            <h1><i class="fa-solid fa-indian-rupee-sign"></i> 299</h1>
+            <p>3 treatments</p><br><br>
+            <p>Refraction</p>
+            <p>Retinal Examination</p>
+            <p>External Examinations</p>
+            <p>9 Procedures</p>
+            <p>Full Closure</p>
+            <br>
+            <a href="#">Get now</a>
+        </div>
+
+        <div class="offer">
+            <h3>Dental Care</h3>
+            <h1><i class="fa-solid fa-indian-rupee-sign"></i> 499</h1>
+            <p>6 treatments</p><br><br>
+            <p>Gum Care</p>
+            <p>Treatments</p>
+            <p>6 Procedures</p>
+            <p>Oral Hygiene</p>
+            <p>Full Closure</p>
+            <br>
+            <a href="#">Get now</a>
+        </div>
+    </div>
+</div>
+<!-- Frequently asked questions -->
+<div data-aos="zoom-in-up">
+<div class="container7">
+    <div class="container7-head"><h2>Frequently Asked</h1>
+        <h1>Questions</h1><br><br>
+        <a href="#">View more</a>
+    
+    </div>
+
+<div class="faq">
+    <div class="faq-item active">
+      <button class="faq-question">How to make an appointment?</button>
+      <div class="faq-answer">
+        You can either call our hospital directly at 1-800-600-380, or you can easily book your consultation online through our website by filling out the appointment form.
+       
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What will my insurance cover for me?</button>
+      <div class="faq-answer">
+        Your insurance coverage will vary depending on your plan, but typically, most health insurance policies cover a range of medical services, including consultations with doctors, diagnostic tests, surgeries, and emergency care.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do Any Health Cards Apply?</button>
+      <div class="faq-answer">
+        Yes, we accept a variety of health cards and insurance plans. Depending on your health card or insurance provider, different treatments and services may be covered.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How can I make a home appointment?</button>
+      <div class="faq-answer">
+        If you prefer medical care at home, we offer home appointment services to provide convenience and comfort. To schedule a home visit, simply call our hospital at 1-800-600-380, or request an appointment online through our website.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Our Hospital Details -->
+<div class="contact-container">
+    <div class="contact-item">
+            <i  class="fas fa-map-marker-alt icon"></i> <!-- Location Icon -->
+      <h4>ADDRESS</h4>
+      <p>Road No-3, Hasthinapuram, Hyderabad</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-clock icon"></i> <!-- Clock Icon -->
+      <h4>WORK HOURS</h4>
+      <p>Mon – Fri : 10AM – 10PM</p>
+      <p>Sat  –  Sun : 10AM  –  2PM</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope icon"></i> <!-- Email Icon -->
+      <h4>E-MAIL</h4>
+      <p>shisha's hospital@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone icon"></i> <!-- Phone Icon -->
+      <h4>TELEPHONE</h4>
+      <p>1-800-600-380</p>
+    </div>
+  </div>
+  <!-- Hospital Photos -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin: 0 auto; max-width: 80%; position: relative;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/_6e04a8b1-0b22-456b-a3a0-35d087243512.jpg" class="d-block w-75 ms-auto me-auto" style="height: 500px; object-fit: cover;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Doctors in Action</h5>
+          <p>Dedicated professionals delivering compassionate care and expertise.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/_6a87f14b-7fc9-4689-9104-9542c64f7241.jpg" class="d-block w-75 ms-auto me-auto" style="height: 500px; object-fit: cover;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Medical Technologies</h5>
+          <p>Cutting-edge innovations driving superior healthcare solutions.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/_6f11653c-b7de-4b2b-b049-7fe2ab2992f6.jpg" class="d-block w-75 ms-auto me-auto" style="height: 500px; object-fit: cover;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Our laboratory</h5>
+          <p>Advanced diagnostics ensuring accurate and timely results.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Health Calculator -->
+
+    <div class="bmicalc">
+      <h1>Health Calculator</h1>
+  
+      <!-- BMI Calculator -->
+      <div class="form-group">
+        <h3>BMI Calculator</h3>
+        <input type="number" id="weight" placeholder="Enter weight in kg">
+        <input type="number" id="height" placeholder="Enter height in meters">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmiResult"></p>
+      </div>
+    </div>
+   
+    
+<!-- Make Appointment Here -->
+
+    <div class="appointment-container" id="appointment">
+        <div class="appointment-image">
+          <img src="images/10.webp" alt="Hospital Image">
+        </div>
+        <div class="appointment-form">
+          <h2>Book an Appointment</h2>
+          <form>
+            <div>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+      
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+      
+            <div>
+              <label for="appointment-date">Preferred Appointment Date</label>
+              <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+      
+            <div>
+              <label for="department">Select Department</label>
+              <select id="department" name="department" required>
+                <option value="general">General Medicine</option>
+                <option value="naturopathy">Naturopathy</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="dentistry">Dentistry</option>
+                <option value="ophthalmology">Ophthalmology</option>
+                <option value="pediatrics">Pediatrics</option>
+              </select>
+            </div>
+      
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+      </div>
+    
+    <!-- Map -->
+    <div class="map-container">
+      <h1>Find Us Here</h1>
+      <div class="custom-map">
+        <!-- Google Maps iframe -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.746511263404!2d78.5520818!3d17.327775499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3005c558d3f%3A0x76cf1966521e85aa!2sShisha&#39;s%20Hospital!5e0!3m2!1sen!2sin!4v1736426970259!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          
+        </iframe>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-section">
+        <h3>Important Information</h3>
+        <p>Shisha's Hospital is a trusted center for natural healing, specializing in advanced Naturopathy treatments for holistic well-being. We are committed to providing personalized care, combining modern techniques with natural therapies to promote a healthier lifestyle.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Latest News</h3>
+        <div class="news-item">
+          <img src="images/producing-news.jpg" alt="News">
+          <p><strong>NEWS : </strong> Welcome to our new building</p>
+        </div>
+        <div class="news-item">
+          <img src="images/Balanced_Diet_Basics1717757874.webp" alt="Diet">
+          <p><strong>DIET : </strong> Healthier diet for better future</p>
+        </div>
+      </div>
+      <div class="footer-contact footer-section">
+        <h3>Contact</h3>
+        <p>📍 Road No-3, Hasthinapuram, Hyderabad</p>
+        <p>📞 1-800-600-380</p>
+        <p>📧 Shisha's hospital @gmail.com</p>
+        <p>🕒 Mon. – Fri. 10AM – 10PM</p>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      Copyright © 2020 Shisha's Hospital. All rights reserved.
+    </div>
+    <script>
+      // Making nav Fixed Using Js
+      window.addEventListener('scroll', function () {
+        const nav = document.querySelector('.nav');
+        const imageContainerHeight = document.querySelector('.image-container').offsetHeight;
+
+        if (window.scrollY > imageContainerHeight) {
+            // Add the 'fixed' class when the user scrolls past the image container
+            nav.classList.add('fixed');
+        } else {
+            // Keep the navbar fixed to the top with a white background when scrolling up
+            if (window.scrollY === 0) {
+                nav.classList.remove('fixed'); // Removes the 'fixed' class at the very top
+            } else {
+                nav.classList.add('fixed');
+            }
+        }
+    });
+
+       //Nav Search Bar
+       function toggleSearchBar() {
+            var searchBar = document.getElementById('searchInput');
+            if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+                searchBar.style.display = 'block';
+            } else {
+                searchBar.style.display = 'none';
+            }
+        }
+        // Medical Analysis
+document.addEventListener('DOMContentLoaded', () => {
+    const featureItems = document.querySelectorAll('.features li');
+    const featureDetails = document.querySelectorAll('.feature-details');
+
+    featureItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            // Remove active class from all items
+            featureItems.forEach((li) => li.classList.remove('active1'));
+            featureDetails.forEach((detail) => detail.classList.remove('active'));
+
+            // Add active class to the clicked item
+            item.classList.add('active1');
+            const target = item.getAttribute('data-target');
+            document.getElementById(target).classList.add('active');
+        });
+    });
+});
+
+
+
+// Number Count of - No of Doctors and No of Services etc
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".sh-counter-number");
+  const counterContainer = document.querySelector(".counter-container");
+
+  // Function to animate all counters
+  const animateCounters = () => {
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      const increment = Math.ceil(target / 200); // Smaller increment for slower counting
+
+      const updateCounter = () => {
+        const current = +counter.innerText;
+
+        if (current < target) {
+          counter.innerText = current + increment;
+          setTimeout(updateCounter, 30); // Increase timeout duration for slower speed
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+  };
+// Use Intersection Observer to detect when counter-container is in view
+const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(counterContainer); // Stop observing after animation starts
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the counter-container is visible
+  );
+
+  observer.observe(counterContainer);
+});
+// Frequently Asked Questions
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const allFaqItems = document.querySelectorAll('.faq-item');
+
+        // Close all FAQ items except the clicked one
+        allFaqItems.forEach(item => {
+            if (item !== faqItem) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked FAQ item
+        faqItem.classList.toggle('active');
+    });
+});
+// Integrating Animations
+AOS.init({
+    duration: 3000, 
+    once: true,     
+  });
+  
+
+// BMI Calculator
+function calculateBMI() {
+    // Get the weight and height values from the input fields
+    const weight = parseFloat(document.getElementById("weight").value);
+    const height = parseFloat(document.getElementById("height").value);
+
+   
+    if (weight > 0 && height > 0) {
+        // Calculate BMI using the formula: weight / (height * height)
+        const bmi = weight / (height * height);
+
+        // Determine the BMI category
+        let category = '';
+        if (bmi < 18.5) {
+            category = 'Underweight';
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            category = 'Normal weight';
+        } else if (bmi >= 25 && bmi < 29.9) {
+            category = 'Overweight';
+        } else {
+            category = 'Obese';
+        }
+
+        // Display the result in the BMI result paragraph
+        document.getElementById("bmiResult").textContent = `Your BMI is ${bmi.toFixed(2)}. Category: ${category}`;
+    } else {
+        // If inputs are invalid, show an error message
+        document.getElementById("bmiResult").textContent = "Please enter valid weight and height values.";
+    }
+}
+
+
+
+    </script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
