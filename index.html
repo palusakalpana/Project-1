@@ -33,6 +33,15 @@
                 <input type="text" class="search-bar search-input" id="searchInput" placeholder="Search..." />
             </div>
         </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- Dropdown Menu -->
+      <div class="dropdown-menu">
+          <a href="#image-container">Home</a>
+          <a href="#container2">About</a>
+          <a href="#appointment">Contact</a>
+      </div>
     </div>
 
     <!-- Image and Text Container -->
@@ -480,6 +489,27 @@
                 searchBar.style.display = 'none';
             }
         }
+
+         // Toggle Dropdown Menu
+         function toggleMenu() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Toggle Search Bar Visibility
+        function toggleSearchBar() {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.style.display = searchBar.style.display === 'inline-block' ? 'none' : 'inline-block';
+        }
+
+        // Close Dropdown on Resize
+        window.addEventListener('resize', () => {
+            const dropdown = document.querySelector('.dropdown-menu');
+            if (window.innerWidth > 768) {
+                dropdown.style.display = 'none';
+            }
+        });
+        
         // Medical Analysis
 document.addEventListener('DOMContentLoaded', () => {
     const featureItems = document.querySelectorAll('.features li');

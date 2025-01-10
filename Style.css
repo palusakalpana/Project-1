@@ -8,55 +8,83 @@
             margin: 0;
             padding: 0;
         }
-        /* Nav Bar  */
-        .nav {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: auto 1fr; 
-    align-items: center; 
-    padding: 20px;
-    font-size: 25px;
-    background-color: transparent; 
-    position: absolute; 
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    transition: background-color 0.3s ease, position 0.3s ease;
-}   
-/* Position of Nav gets Fixed Here */
-.nav.fixed {
-    position: fixed; 
-    background-color: white; /* White background when fixed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        /* Navbar Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease, position 0.3s ease;
 }
 
-/* Making Nav1 elements to display in one line */
-.nav1 {
-    display: grid;
-    grid-auto-flow: column; 
-    gap: 1%; 
-   justify-content: end;
-    align-items: center; 
-    font-size: 17px;
-    
+.nav.fixed {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-        .nav1 a{
-            text-decoration: none;
-            color: black;
-        }
-        .search-bar {
-            display: none;
-            margin-left: 10px;
-            padding: 5px;
-            font-size: 16px;
-        }
-        .search-container {
-            position: relative;
-        }
-        .search-input {
-            padding: 5px;
-            font-size: 16px;
-        }
+
+/* Full Navbar Links */
+.nav1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.nav1 a:hover {
+  color: rgb(41, 226, 189);
+}
+
+/* Search Icon and Bar */
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  display: none;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 15px; 
+  border-radius: 5px;
+  width: auto; 
+  min-width: fit-content; 
+}
+
+.dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px; 
+  font-size: 14px; 
+}
+
+.dropdown-menu a:hover {
+  color: rgb(132, 133, 133);
+}
+
+
         /* Header Image and text container */
         .image-container {
             display: flex;
@@ -70,7 +98,7 @@
             position: relative;
         
         }
-        /* Add a dark overlay to enhance text visibility */
+       
         .image-container::before {
             content: "";
             position: absolute;
@@ -83,7 +111,7 @@
         /* Text styles */
         .info-text {
             position: relative;
-            z-index: 2; /* Ensure the text appears above the overlay */
+            z-index: 2; 
             max-width: 500px;
             padding: 20px;
             border-radius: 10px;
@@ -1216,22 +1244,13 @@ background-color: #eae7e7;
 
 /* 3. Screens between 576px and 768px */
 @media (min-width: 576px) and (max-width: 768px) {
-    .nav1 {
-        display: none; 
-    }
-    .nav {
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-        padding: 15px 20px; 
-    }
-    .nav::after {
-        content: "\f0c9"; 
-        font-family: FontAwesome;
-        font-size: 22px; 
-        cursor: pointer;
-        margin-left: 10px; 
-    }
+  .nav1 {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+}
     .info-text {
         padding: 15px;
         left: 5%;
@@ -1510,23 +1529,13 @@ background-color: #eae7e7;
 
 /* 4. Screens up to 576px */
 @media (max-width: 576px) {
-    .nav1 {
-        display: none; 
-    }
-    .nav {
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-        padding: 10px 20px; 
-        font-size: 20px;
-    }
-    .nav::after {
-        content: "\f0c9"; 
-        font-family: FontAwesome;
-        font-size: 20px;
-        cursor: pointer;
-        margin-left: 10px; 
-    }
+  .nav1 {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+}
     .info-text {
         padding: 10px;
         left: 5%;
