@@ -22,6 +22,9 @@
   z-index: 10;
   transition: background-color 0.3s ease, position 0.3s ease;
 }
+.hamburger-menu {
+  display: none;
+}
 
 .nav.fixed {
   position: fixed;
@@ -847,7 +850,9 @@ background-color: #eae7e7;
     .hamburger-menu {
       display: none;
   }
-   
+  .dropdown-menu{
+    display: none;
+  }
     .info-text h1 {
         font-size: 35px; 
     }
@@ -1046,7 +1051,9 @@ background-color: #eae7e7;
     .hamburger-menu {
       display: none;
   }
-   
+   .dropdown-menu{
+    display: none;
+   }
     .info-text h1 {
         font-size: 30px;
         word-wrap: break-word;
