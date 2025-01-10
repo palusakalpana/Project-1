@@ -525,17 +525,17 @@ background-color: #eae7e7;
 }
 
 .offer:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 /* Coloring 1st and 3rd cards */
 .special-offers .offer:nth-child(1),
 .special-offers .offer:nth-child(3) {
-    background-color: #cbf1f7; /* color for card 1 and 3 */
+    background-color: #cbf1f7;
     height: auto;
 }
 /* Coloring 2nd Card */
 .special-offers .offer:nth-child(2) {
-    background-color: white; /* White for card 2 */
+    background-color: white; 
     height: 500px; 
     display: flex;
     flex-direction: column;
@@ -844,6 +844,10 @@ background-color: #eae7e7;
     .nav1 {
         font-size: 15px; 
     }
+    .hamburger-menu {
+      display: none;
+  }
+   
     .info-text h1 {
         font-size: 35px; 
     }
@@ -1039,6 +1043,10 @@ background-color: #eae7e7;
     .nav1 {
         font-size: 14px;
     }
+    .hamburger-menu {
+      display: none;
+  }
+   
     .info-text h1 {
         font-size: 30px;
         word-wrap: break-word;
