@@ -117,6 +117,7 @@
         }
         /* Text styles */
         .info-text {
+          margin-top: 5%;
             position: relative;
             z-index: 2; 
             max-width: 500px;
