@@ -117,7 +117,7 @@
         }
         /* Text styles */
         .info-text {
-          margin-top: 5%;
+        
             position: relative;
             z-index: 2; 
             max-width: 500px;
@@ -1557,12 +1557,13 @@ background-color: #eae7e7;
     display: block;
 }
     .info-text {
+      margin-top: 3%;
         padding: 10px;
         left: 5%;
         max-width: 50%; 
     }
     .info-text h1 {
-        font-size: 20px; 
+        font-size: 18px; 
         word-wrap: break-word; 
     }
     .info-text p {
