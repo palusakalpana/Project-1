@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  font-size: 20px;
+  font-size: 25px;
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -31,12 +31,16 @@
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.nav div:nth-child(1):hover {
+  color: rgb(41, 226, 189);
+}
 
 /* Full Navbar Links */
 .nav1 {
   display: flex;
   gap: 20px;
   align-items: center;
+  font-size: 25px;
 }
 
 .nav1 a {
